@@ -1,0 +1,113 @@
+/************
+ * notebook *
+ ************/
+.notebook {
+    background-color: @base;
+    background-image: none;
+    padding: 0px;
+    background-clip: border-box;
+    border-color: @border;
+    border-width: 1px;
+    border-style: solid;
+}
+
+.notebook tab {
+    background-image: none;
+    background-color: @base;
+    border-image: -gtk-gradient (linear, left top, left bottom,
+                                 from (shade (@border, 1.0)),
+                                 to (alpha (shade (@border, 1.0), 0.3))) 1;
+    border-image-width: 1px 1px;
+    border-style: solid;
+    box-shadow: none;
+}
+
+.notebook tab:active {
+    border-image: none;
+    border-image-width: 0px 0px;
+    border-color: @border;
+    border-style: solid;
+    background-color: @base;
+    background-image: none;
+    color: @text;
+}
+
+.notebook tab GtkLabel {
+    padding: 1px 1px 2px 1px;
+}
+
+.notebook tab {
+    color: @text;
+}
+
+.notebook tab.top:active {
+    border-image: none;
+    border-image-width: 0px 0px;
+    padding: 3px 7px 1px 7px;
+    border-top-color: @selection;
+    border-width: 4px 1px 1px 1px;
+}
+
+.notebook tab.top {
+    border-image: -gtk-gradient (linear, left top, left bottom,
+                                 from (shade (@border, 1.0)),
+                                 to (alpha (shade (@border, 1.0), 0.3))) 1;
+    border-image-width: 1px 1px;
+    padding: 2px 5px 0 5px;
+}
+
+.notebook tab.right:active {
+    border-image: none;
+    border-image-width: 0px 0px;
+    padding: 4px 6px 4px 1px;
+    border-right-color: @selection;
+    border-width: 1px 4px 1px 1px;
+}
+
+.notebook tab.right {
+    padding: 3px 4px 3px 0;
+    border-image: -gtk-gradient (linear, right top, left top,
+                                 from (shade (@border, 1.0)),
+                                 to (alpha (shade (@border, 1.0), 0.3))) 1;
+    border-image-width: 1px 1px;
+}
+
+.notebook tab.bottom:active {
+    border-image: none;
+    border-image-width: 0px 0px;
+    padding: 1px 7px 3px 7px;
+    border-bottom-color: @selection;
+    border-width: 1px 1px 4px 1px;
+}
+
+.notebook tab.bottom {
+    padding: 0 5px 2px 5px;
+    border-image: -gtk-gradient (linear, left bottom, left top,
+                                 from (shade (@border, 1.0)),
+                                 to (alpha (shade (@border, 1.0), 0.3))) 1;
+    border-image-width: 1px 1px;
+}
+
+.notebook tab.left:active {
+    border-image: none;
+    border-image-width: 0px 0px;
+    padding: 4px 1px 4px 6px;
+    border-left-color: @selection;
+    border-width: 1px 1px 1px 4px;
+}
+
+.notebook tab.left {
+    padding: 3px 0 3px 4px;
+    border-image: -gtk-gradient (linear, left top, right top,
+                                 from (shade (@border, 1.0)),
+                                 to (alpha (shade (@border, 1.0), 0.3))) 1;
+    border-image-width: 1px 1px;
+}
+
+.notebook tab .button {
+    padding: 0;
+}
+
+.notebook GtkDrawingArea {
+    background-color: @base;
+}

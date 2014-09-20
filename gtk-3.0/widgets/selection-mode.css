@@ -1,0 +1,144 @@
+/******************
+ * Selection mode *
+ ******************/
+.selection-mode.header-bar,
+.selection-mode.toolbar {
+    border: none;
+    background-image: none;
+    color: #FFFFFF;
+    text-shadow: 0px 1px alpha(#000000,0.3);
+    background-image: linear-gradient(to bottom,
+                                  @selection,
+                                  shade(@selection, 0.8)
+                                  );
+    padding: 4px;
+}
+
+/* regular button */
+.selection-mode.header-bar .button,
+.selection-mode.toolbar .button,
+.selection-mode.toolbar GtkToolButton .button {
+    border: 1px solid @selected_border;
+    border-radius: 0px;
+    background-image: linear-gradient(to bottom,
+                                  @selection,
+                                  shade(@selection, 0.9)
+                                  );
+    color: #FFFFFF;
+    text-shadow: 0px 1px alpha(#000000,0.3);
+}
+
+.selection-mode.header-bar .button:hover,
+.selection-mode.toolbar .button:hover,
+.selection-mode.toolbar GtkToolButton .button:hover {
+    border: 1px solid @selected_border;
+    background-image: linear-gradient(to bottom,
+                                  shade(@selection, 1.10),
+                                  @selection
+                                  );
+    color: #FFFFFF;
+    text-shadow: 0px 1px alpha(#000000,0.3);
+}
+
+.selection-mode.header-bar .button:backdrop,
+.selection-mode.toolbar .button:backdrop,
+.selection-mode.toolbar GtkToolButton .button:backdrop {
+    border: 1px solid @backdrop_border;
+    background-color: @backdrop_background;
+    color: @backdrop_text;
+    text-shadow: none;
+}
+
+.selection-mode.header-bar .button:active,
+.selection-mode.toolbar .button:active,
+.selection-mode.toolbar GtkToolButton .button:active {
+    border: 1px solid @selected_border;
+    background-image: linear-gradient(to bottom,
+                                  shade(@selection, 1.2),
+                                  shade(@selection, 1.18)
+                                  );
+    color: #FFFFFF;
+    text-shadow: 0px 1px alpha(#000000,0.3);
+}
+
+.selection-mode.header-bar .button:hover:active,
+.selection-mode.toolbar .button:hover:active,
+.selection-mode.toolbar GtkToolButton .button:hover:active {
+    border: 1px solid @selected_border;
+    background-image: linear-gradient(to bottom,
+                                  shade(@selection, 1.2),
+                                  shade(@selection, 1.18)
+                                  );
+    color: #FFFFFF;
+    text-shadow: 0px 1px alpha(#000000,0.3);
+}
+
+/* suggested button */
+.selection-mode.header-bar .suggested-action.button,
+.selection-mode.toolbar .suggested-action.button,
+.selection-mode.toolbar GtkToolButton.suggested-action .button {
+    border: 1px solid @selected_border;
+    border-radius: 0px;
+    background-color: @selection;
+    background-image: none;
+    color: #FFFFFF;
+    text-shadow: 0px 1px alpha(#000000,0.3);
+}
+
+.selection-mode.header-bar .suggested-action.button:hover,
+.selection-mode.toolbar .suggested-action.button:hover,
+.selection-mode.toolbar GtkToolButton.suggested-action .button:hover {
+    border: 1px solid @selected_border;
+    background-color: @selection;
+    background-image: none;
+    color: #FFFFFF;
+    text-shadow: 0px 1px alpha(#000000,0.3);
+}
+
+.selection-mode.header-bar .suggested-action.button:active,
+.selection-mode.toolbar .suggested-action.button:active,
+.selection-mode.toolbar GtkToolButton.suggested-action:active {
+    border: 1px solid @selected_border;
+    background-color: shade(@selection, 1.05);
+    background-image: none;
+    color: #FFFFFF;
+    text-shadow: 0px 1px alpha(#000000,0.3);
+}
+
+.selection-mode.header-bar .suggested-action.button:hover:active,
+.selection-mode.toolbar .suggested-action.button:hover:active,
+.selection-mode.toolbar GtkToolButton.suggested-action .button:hover:active {
+    border: 1px solid @selected_border;
+    text-shadow: 0px 1px alpha(#000000,0.3);
+    color: #FFFFFF;
+}
+
+/* menu button */
+.selection-mode.header-bar .selection-menu.button,
+.selection-mode.toolbar .selection-menu.button {
+    border-style: none;
+    background: none;
+    color: #FFFFFF;
+    text-shadow: 0px 1px alpha(#000000,0.3);
+}
+
+/* Label */
+.selection-mode.toolbar .dim-label,
+.selection-mode.toolbar .selection-menu.button .dim-label {
+    color: @selection;
+    text-shadow: 0px 1px alpha(#000000,0.3);
+}
+
+.selection-mode.header-bar .selection-menu.button:hover,
+.selection-mode.toolbar .dim-label:hover,
+.selection-mode.toolbar .selection-menu.button:hover,
+.selection-mode.toolbar .selection-menu.button .dim-label:hover {
+    color: alpha(#FFFFFF,0.8);
+    text-shadow: 0px 1px alpha(#000000,0.3);
+}
+
+.selection-mode.header-bar .selection-menu.button:active,
+.selection-mode.toolbar .selection-menu.button:active {
+    color: #FFFFFF;
+    text-shadow: 0px 1px alpha(#000000,0.3);
+}

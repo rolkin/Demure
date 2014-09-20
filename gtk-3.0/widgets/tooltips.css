@@ -1,0 +1,18 @@
+/************
+ * Tooltips *
+ ************/
+ 
+.tooltip {
+    padding: 4px;
+    border-style: none;
+    border-radius: 0px;
+
+    background-color: alpha(@panel, 0.9);
+    color: #FFFFFF;
+
+    text-shadow: 1px 1px black;
+}
+
+.tooltip * {
+    background-color: transparent;
+}

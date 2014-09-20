@@ -1,0 +1,67 @@
+.lightdm.menu {
+/*    background-image: none;*/
+    background-color: @panel;
+    border-color: #FFFFFF;
+    border-radius: 0px;
+    padding: 1px;
+    color: @text;
+}
+
+.lightdm-combo .menu {
+    background-color: @panel;
+    border-color: #FFFFFF;
+    border-radius: 0px;
+    padding: 0px;
+    color: #FFFFFF;
+}
+
+.lightdm.menu .menuitem *,
+.lightdm.menu .menuitem.check:active,
+.lightdm.menu .menuitem.radio:active {
+    color: #FFFFFF;
+}
+
+.lightdm.menubar {
+/*    background-image: none;*/
+    background-color: @panel;
+}
+
+.lightdm-combo.combobox-entry .button,
+.lightdm-combo .cell,
+.lightdm-combo .button,
+.lightdm-combo .entry,
+.lightdm.button,
+.lightdm.entry {
+/*    background-image: none;*/
+    background-color: @panel;
+    border-color: #FFFFFF;
+    border-radius: 5px;
+    padding: 7px;
+    color: #FFFFFF;
+    text-shadow: none;
+}
+
+.lightdm.button,
+.lightdm.button:hover,
+.lightdm.button:active,
+.lightdm.button:active:focused,
+.lightdm.entry,
+.lightdm.entry:hover,
+.lightdm.entry:active,
+.lightdm.entry:active:focused {
+/*    background-image: none;
+    border-image: none;*/
+}
+
+.lightdm.button:focused,
+.lightdm.entry:focused {
+    -unico-focus-border-color: #FFFFFF;
+    border-color: #FFFFFF;
+    border-width: 1px;
+    border-style: solid;
+    color: #FFFFFF;
+}
+
+.lightdm.entry:selected {
+    background-color: #FFFFFF;
+}

@@ -1,0 +1,26 @@
+/******************
+ * GNOME Terminal *
+ ******************/
+VteTerminal {
+    background-color: shade(@base, 0.15);
+    color: @panel_text;
+}
+
+TerminalWindow GtkNotebook.notebook {
+    border-right-width: 0;
+    border-bottom-width: 0;
+    border-left-width: 0;
+}
+
+TerminalWindow .notebook {
+    padding: 0;
+    border-width: 0;
+}
+
+/*
+TerminalScreen {
+    -TerminalScreen-background-darkness: 0.95;
+    background-color: shade(@base, 0.15);
+    color: shade(@selection, 1.9);
+}
+*/

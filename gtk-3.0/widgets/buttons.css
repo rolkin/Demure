@@ -1,0 +1,121 @@
+/***********
+ * Buttons *
+ ***********/
+
+.button {
+    -GtkWidget-focus-padding: 1;
+    -GtkWidget-focus-line-width: 0;
+    
+    transition: border 100ms ease-in-out;
+
+    padding: 3px 2px;
+    border: 1px solid @border;
+    border-radius: 0px;
+    background-image: linear-gradient(to bottom,
+                                  @button_gradient_a,
+                                  @button_gradient_b
+                                  );
+
+    box-shadow: inset 0 0 0 1px alpha (@base, 0.05),
+                inset 0 1px 0 0 alpha (@base, 0.45),
+                inset 0 -1px 0 0 alpha (@base, 0.15);
+    color: @text;
+    text-shadow: 0 1px @text_shadow;
+    icon-shadow: 0 1px @text_shadow;
+}
+
+
+.button:focus,
+.button:hover {
+    border: 1px solid alpha(@selection,0.95);
+    background-image: linear-gradient(to bottom,
+                                  @button_gradient_a,
+                                  @button_gradient_b
+                                  );
+    
+    box-shadow: inset 0 0 0 1px alpha (@base, 0.05),
+                inset 0 1px 0 0 alpha (@base, 0.45),
+                inset 0 -1px 0 0 alpha (@base, 0.15),
+                0 1px 0 1px alpha (@selection, 0.45);
+}
+
+
+/* Active/Pressed Button */
+.button:active {
+    border: 1px solid @border;
+    background-image: linear-gradient(to bottom,
+                                  @button_active_gradient_a,
+                                  @button_active_gradient_b
+                                  );
+    box-shadow: inset 0 0 0 1px alpha (@base, 0.05),
+                inset 0 1px 0 0 alpha (@base, 0.45),
+                inset 0 -1px 0 0 alpha (@base, 0.15);
+    color: @text;
+}
+
+
+/* Separator */
+.button .separator,
+.button.separator {
+    color: @border;
+}
+
+.button .separator:insensitive,
+.button.separator:insensitive {
+    color: @insensitive_border;
+}
+
+/* Insensitive Button */
+.button:insensitive,
+.button.default:insensitive,
+.button:active:insensitive {
+    border: 1px solid @insensitive_border;
+    background-color: @insensitive_background;
+    background-image: none;
+    color: @insensitive_text;
+    text-shadow: none;
+}
+
+/* backdrop Button */
+.button:backdrop,
+.button.default:backdrop,
+.button:active:backdrop {
+    border: 1px solid @backdrop_border;
+    background-color: @backdrop_background;
+    background-image: linear-gradient(to bottom,
+                                  @button_backdrop_gradient_a,
+                                  @button_backdrop_gradient_b
+                                  );
+    color: @backdrop_text;
+    text-shadow: none;
+}
+
+
+/* Default Button */
+.button.default {
+    border: 1px solid @selection;
+
+    color: @text;
+    background-image: linear-gradient(to bottom,
+                              @button_gradient_a,
+                              @button_gradient_b
+                              );
+}
+
+.button.default:hover,
+.button.default:active {
+    border: 1px solid alpha(@selection, 0.4);
+    color: @active_text;
+    background-image: linear-gradient(to bottom,
+                              @button_active_gradient_a,
+                              @button_active_gradient_b
+                              );
+}
+
+.button.default:active:hover {
+    border: 1px solid @hover_selection;
+    background-image: linear-gradient(to bottom,
+                              @button_active_gradient_a,
+                              @button_active_gradient_b
+                              );
+}

@@ -1,0 +1,41 @@
+/* A thank you to Orchis and Numix projects for */
+/* providing an excellent theme that was used */
+/* as a template and starting point */
+
+/**********
+ * Colors *
+ **********/
+
+/* Base colors */
+@define-color base #FFFFFF;/* Base color */
+@define-color background #EFEFEF;/* Background color */
+@define-color foreground #555555;/* Foreground color */
+@define-color border shade(@background, 0.8);/* Borders color */
+@define-color separator @border;/* Separator color */
+@define-color menu_separator alpha(#000000, 0.1);/* Separator color */
+@define-color text #555555;/* Text color */
+@define-color panel #555555;/* Panel color */
+
+/* start change color here */
+@define-color selection shade(#3E9CE2, 0.8);/* Selection color */
+/* end change color here */
+
+@define-color selected_border shade(@selection, 0.9);/* Selection Border */
+@define-color gradient_a @background;/* Gradient color A */
+@define-color gradient_b shade(@gradient_a, 0.95);/* Gradient color B */
+@define-color view_background #FFFFFF;/* View background */
+@define-color inactive_frame @border;/* Inactive frame color */
+@define-color panel_text #EFEFEF;/* Panel text color */
+@define-color panel_text_shadow alpha(#000000, 0.2);/* Panel text color */
+@define-color text_shadow alpha(#FFFFFF, 0.2);/* Text shadow */
+@define-color titlebar shade(@background, 0.95);/* Titlebar */
+
+/***********
+ * Imports *
+ ***********/
+
+/* Import Main CSS */
+@import url("gtk-common.css");
+@import url("gtk-widgets-assets.css");
+@import url("gtk-fallback.css");
+@import url("gtk-widgets.css");

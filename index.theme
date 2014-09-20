@@ -1,0 +1,9 @@
+[Desktop Entry]
+Type=X-GNOME-Metatheme
+Name=Demure
+Comment=A modest theme based off of Orchis.
+Encoding=UTF-8
+
+[X-GNOME-Metatheme]
+GtkTheme=Demure
+MetacityTheme=Demure

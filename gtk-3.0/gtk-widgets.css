@@ -1,0 +1,48 @@
+* {
+    engine: none;
+    padding: 0;
+
+    background-clip: padding-box;
+
+    -GtkToolButton-icon-spacing: 4;
+
+    -GtkTextView-error-underline-color: @error;
+
+    -GtkPaned-handle-size: 5;
+
+    -GtkCheckButton-indicator-size: 16;
+    -GtkCheckMenuItem-indicator-size: 12;
+
+    -GtkScrolledWindow-scrollbar-spacing: 0;
+    -GtkScrolledWindow-scrollbars-within-bevel: 1;
+
+    -GtkToolItemGroup-expander-size: 11;
+    -GtkExpander-expander-size: 11;
+    -GtkTreeView-expander-size: 11;
+
+    -GtkTreeView-horizontal-separator: 4;
+
+    -GtkMenu-horizontal-padding: 0;
+    -GtkMenu-vertical-padding: 0;
+
+    -GtkNotebook-tab-overlap: 1;
+
+    -GtkWidget-link-color: @link;
+    -GtkWidget-visited-link-color: @link;
+    -GtkIMHtml-hyperlink-color: @link;
+    -GtkHTML-link-color: @link;
+
+    -WnckTasklist-fade-overlay-rect: 0;
+
+    -GtkWidget-focus-padding: 2;
+    -GtkWidget-focus-line-width: 1;
+    -GtkWindow-resize-grip-width: 0;
+    -GtkWindow-resize-grip-height: 0; 
+
+     /*added by Shawn*/
+    -GtkArrow-arrow-scaling: 0.5;
+
+    outline-color: alpha(@text, 0.3);
+    outline-style: dashed;
+    outline-offset: 2px;
+}
