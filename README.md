@@ -8,6 +8,8 @@ Demure is a subtle, light GTK theme with support for both Gnome and Xfce.
 
 > [Album](http://imgur.com/a/5EjFr)
 
+---
+
 ## Upcoming Features
 
 - Addition of Xfce Window Manager theming
