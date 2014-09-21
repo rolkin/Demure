@@ -15,11 +15,11 @@ Demure is a subtle, light GTK theme with support for both Gnome and Xfce.
 
 ## Manual Installation
 
-For an individual user's usage: download and extract the contents to your themes directory (ie, "/home/user/.themes/")
+- Download and extract contents to themes directory
+ - Specific user: example, "/home/user/.themes/"
+ - System-wide: example, "/usr/share/themes/"
 
-For system-wide usage: download and extract the contents to the system's themes diectory (ie, "/usr/share/themes/")
-
-Once installed, you can set your desktop environment's theme via the settings manager or something like "gsettings"(Gnome) or "xfconf-query"(Xfce)
+- Set theme via DE settings manager or something like "gsettings"(Gnome) or "xfconf-query"(Xfce)
 
 ## Bug fixes and feature requests
 
