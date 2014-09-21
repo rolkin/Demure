@@ -25,8 +25,6 @@ Once installed, you can set your desktop environment's theme via the settings ma
 
 Additions and refinements are continually being working on, so please feel free to contact me for any bug fixes and feature requests.
 
-## Contact
-
-[rolkin/Demure](https://github.com/rolkin/Demure)
+> [Contact](https://github.com/rolkin/Demure)
 
 -----------
